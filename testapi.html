@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch Form Submission</title>
+</head>
+<body>
+  <h1>Submit a Message</h1>
+  <form id="message-form">
+    <label for="message">Enter your message:</label>
+    <input type="text" id="message" name="message" required>
+    <button type="submit">Send</button>
+  </form>
+
+  <h2>Response:</h2>
+  <div id="response-container">
+    <p>Waiting for response...</p>
+  </div>
+
+  <script>
+    const form = document.getElementById('message-form');
+    const responseContainer = document.getElementById('response-container');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault(); // Prevent form from reloading the page
+
+      const message = document.getElementById('message').value; // Get the message from the input
+      const url = 'https://sadmansakibshuvo83838383.pythonanywhere.com/submit/';
+
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams({ message }), // Encode the data as application/x-www-form-urlencoded
+      })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP Error: ${response.status} - ${response.statusText}`);
+          }
+          return response.text(); // Process the response as plain text
+        })
+        .then(data => {
+          // Display the response on the webpage
+          responseContainer.innerHTML = `<pre>${data}</pre>`;
+        })
+        .catch(error => {
+          // Display the error message
+          responseContainer.innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+        });
+    });
+  </script>
+</body>
+</html>
+

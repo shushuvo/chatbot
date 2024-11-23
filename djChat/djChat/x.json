@@ -1,0 +1,22 @@
+{
+    "hello": "Hi! How can I help you today?",
+    "how are you": "I'm doing well, thank you! How about you?",
+    "what is your name": "I am a chatbot created to assist you with various tasks.",
+    "what can you do": "I can answer questions, assist with programming, solve math problems, and more.",
+    "who created you": "I was developed by OpenAI, a leader in artificial intelligence research.",
+    "tell me a joke": "Why do programmers prefer dark mode? Because light attracts bugs!",
+    "what is AI": "AI, or artificial intelligence, refers to systems designed to perform tasks that require human-like intelligence.",
+    "what is Python": "Python is a popular programming language known for its simplicity and versatility.",
+    "how do I learn programming": "Start with basic concepts, choose a beginner-friendly language like Python, and practice regularly.",
+    "what is 2 + 2": "2 + 2 equals 4.",
+    "can you help with math": "Yes! I can assist with calculations, algebra, and more advanced topics.",
+    "what is the capital of France": "The capital of France is Paris.",
+    "how do I make a website": "You can use HTML, CSS, and JavaScript to build a basic website. Frameworks like React or Django can make it more advanced.",
+    "what is the weather like today": "I can't access real-time weather data, but you can check a weather app for the latest update.",
+    "what is the meaning of life": "The meaning of life is a profound question. Many say it's to find happiness, purpose, or connection.",
+    "how do I stay motivated": "Set clear goals, break tasks into smaller steps, and remind yourself why you started.",
+    "what is your favorite movie": "I don't watch movies, but I can recommend some if you'd like!",
+    "how do I learn reverse engineering": "Start by learning assembly language, debugging tools, and analyzing simple binaries.",
+    "bye": "Goodbye! Have a wonderful day!"
+}
+
